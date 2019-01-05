@@ -14,7 +14,6 @@
 require 'byebug'
 require 'database_cleaner'
 require 'simplecov'
-#
 SimpleCov.start "rails"
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
@@ -36,10 +35,11 @@ RSpec.configure do |config|
       DatabaseCleaner.clean_with(:truncation)
     end
     config.around(:each) do |example|
-      DatabaseCleaner.cleaning do
+        DatabaseCleaner.cleaning do
         example.run
       end
     end
+    
   end
 
   # rspec-mocks config goes here. You can use an alternate test double
