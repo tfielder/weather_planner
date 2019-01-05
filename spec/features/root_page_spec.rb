@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'as a user' do
+RSpec.describe 'as a user' do
   describe 'visiting the root page "/"' do
     it 'shows the title of the page' do
       visit '/'
