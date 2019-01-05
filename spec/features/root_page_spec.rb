@@ -11,5 +11,13 @@ RSpec.describe 'as a user' do
       expect(page).to have_field('location')
       # expect(page).to have_submit('Submit')
     end
+    it 'the submit button takes the user to the results page' do
+      visit '/'
+
+      fill_in :location with: 'Denver, CO'
+      click 'Submit'
+
+      expect(current_path).to eq('/results')
+    end
   end
 end
