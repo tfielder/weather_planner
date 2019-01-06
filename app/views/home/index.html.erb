@@ -1,8 +1,8 @@
 <h1>Weatherwise</h1>
 <h2>A better way to plan your day</h2>
 
-<%= form_for @location do |f| %>
-  <%= f.label :location %>:
-  <%= f.text_field :location %><br />
-  <%= button_to "Submit", results_path(location: @location), class: "button" %>
+<%= form_tag("/results", method:'get') do %>
+  <%= label_tag(:location, "Location:") %>
+  <%= text_field_tag(:location) %>
+  <%= button_tag("Submit") %>
 <% end %>
