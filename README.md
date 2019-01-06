@@ -1,4 +1,4 @@
-# README
+# Whetherwise README
 ## Table of Contents
 
 * [Introduction](#introduction)
@@ -13,16 +13,16 @@
 * [Tech Stack List](#tech-stack-list)
 
 ## <a name="introduction"></a>Introduction
-  Many of us plan our activities and what we'll wear based on the weather, so why not have all of these in one place? Weather Planner is a basic app that integrates the weather, apparel recommendations based on the weather, and daily events all in one place.
+  Many of us plan our activities and what we'll wear based on the weather, so why not have all of these in one place? Weatherwise is a basic app that integrates the weather, apparel recommendations based on the weather, and daily events all in one place.
 
-  Visit the app here:
+  Visit the app here: https://whetherwise.herokuapp.com/
 
   This app also makes use of the weather planner backend api.
-  The backend api repo can be found here:
-  And the backend live api can be found here:
+  The backend api repo can be found here: https://github.com/tfielder/api_weather_planner
+  And the backend live api can be found here: https://weather-planner-api.herokuapp.com/
 
 ## <a name="core-details"></a>Core Details
-  App Name: Weather Planner
+  App Name: Whetherwise
   Last Update: 01/05/19
   Authors/Contributors: Tim Fielder
   Version: 1.1.1
