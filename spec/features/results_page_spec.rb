@@ -6,7 +6,7 @@ describe 'as a user' do
       it 'shows the results page' do
         visit '/'
 
-        fill_in 'Location', with: 'Denver, CO'
+        fill_in :location, with: 'Denver, CO'
 
         click_on 'Submit'
 
@@ -16,7 +16,7 @@ describe 'as a user' do
         expect(page).to have_content("Next 5 Days")
         expect(page).to have_content("Next 10 Days")
 
-        expect(page).to have_button("Home")
+        expect(page).to have_link("Home")
 
         #Today section
         expect(page).to have_content("You should wear:")
