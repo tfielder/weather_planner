@@ -6,7 +6,7 @@ describe 'as a user' do
       it 'shows a selection boxes' do
         visit '/'
 
-        fill_in :location, with: 'Denver, CO'
+        fill_in 'Location', with: 'Denver, CO'
 
         click_on 'Submit'
 
@@ -15,6 +15,8 @@ describe 'as a user' do
         expect(page).to have_content("Today")
         expect(page).to have_content("Next 5 Days")
         expect(page).to have_content("Next 10 Days")
+
+        expect(page).to have_button("Home")
       end
     end
   end
