@@ -1,9 +1,9 @@
 class HomeController < ApplicationController
   def index
-    @location = ""
+    @location = " "
   end
 
   def show
-    
+    @location = params[:location]
   end
 end
