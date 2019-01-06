@@ -39,7 +39,7 @@ describe 'as a user' do
         expect(page.find(".in-six-hours")[:class]).to eq("in-six-hours")
 
         #Next 5 days section
-        expect(page.find(".forecast")[:class]).to eq("forecast")
+        expect(page.find(".five-days-main")[:class]).to eq("five-days-main")
         expect(page.find(".in-one-day")[:class]).to eq("in-one-day")
         expect(page.find(".in-two-days")[:class]).to eq("in-two-days")
         expect(page.find(".in-three-days")[:class]).to eq("in-three-days")
