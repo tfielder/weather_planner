@@ -13,7 +13,7 @@ RSpec.describe 'as a user' do
     it 'the submit button takes the user to the results page' do
       visit '/'
 
-      fill_in 'Location', with: 'Denver, CO'
+      fill_in :location, with: 'Denver, CO'
 
       click_on 'Submit'
       expect(current_path).to eq('/results')
