@@ -11,9 +11,10 @@ describe 'as a user' do
         click_on 'Submit'
 
         expect(current_path).to eq('/results')
-        expect(page).to have_link("Today")
-        expect(page).to have_link("Next 5 Days")
-        expect(page).to have_link("Next 10 Days")
+
+        expect(page).to have_content("Today")
+        expect(page).to have_content("Next 5 Days")
+        expect(page).to have_content("Next 10 Days")
       end
     end
   end
