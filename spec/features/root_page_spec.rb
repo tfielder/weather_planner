@@ -16,7 +16,7 @@ RSpec.describe 'as a user' do
 
       fill_in :location, with: 'Denver, CO'
 
-      # find('input[name="Submit"]').click
+      click_on 'Submit'
       # expect(current_path).to eq('/results')
     end
   end
