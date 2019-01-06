@@ -1,18 +1,54 @@
 /*
   Fonts:
+    Primary:
+    Trocchi   <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet"> font-family: 'Trocchi', serif;
+    Shadow Into Light Two <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">  font-family: 'Shadows Into Light Two', cursive;
+    Architects Daughter <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">  font-family: 'Architects Daughter', curs
+    Amatic SC  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">   font-family: 'Amatic SC', cursive;
+
+    Secondary:
+    Mako <link href="https://fonts.googleapis.com/css?family=Mako" rel="stylesheet">  font-family: 'Mako', sans-serif;
+    Reem Kufi <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">  font-family: 'Reem Kufi', sans-serif;
+    -> Hind   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">  font-family: 'Hind', sans-serif;
 
   Colors:
-  
+    Palette_1:
+      #f46036 : orange
+      #5b85aa : light_blue
+      #414770 : purple_blue
+      #372248 : purple
+      #171123 : black_purple
+
+    Palette_2:
+      #870058 : fuschia
+      #a4303f : red
+      #f2d0a4 : yellow_almond
+      #ffeccc : cream
+      #c8d6af : mint
 */
 
 body {
   background-image: "../../lib/assets/photos/background-blur-clean-531880.jpg";
+  background-color: #414770;
+  color: #fff;
+  font-family: 'Mako', sans-serif;
 }
 
 h1 {
-
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
 }
 
 h2 {
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+}
 
+a {
+  color: #ffeccc;
+}
+
+div {
+  margin: 0 auto;
+  width: 90%;
 }
