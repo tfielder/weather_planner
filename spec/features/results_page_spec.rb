@@ -46,10 +46,10 @@ describe 'as a user' do
         expect(page.find(".in-four-days")[:class]).to eq("in-four-days")
         expect(page.find(".in-five-days")[:class]).to eq("in-five-days")
 
-        expect(page.find(".day")[:class]).to eq("day-of-the-week")
-        expect(page.find(".days-icon")[:class]).to eq("days-icon")
-        expect(page.find(".days-high")[:class]).to eq("days-high")
-        expect(page.find(".days-low")[:class]).to eq("days-low")
+        expect(page.find(".day-of-the-week-1")[:class]).to eq("day-of-the-week-1")
+        expect(page.find(".days-icon-1")[:class]).to eq("days-icon-1")
+        expect(page.find(".days-high-1")[:class]).to eq("days-high-1")
+        expect(page.find(".days-low-1")[:class]).to eq("days-low-1")
 
         #Next 10 days section
         expect(page.find(".in-six-days")[:class]).to eq("in-six-days")
