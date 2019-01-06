@@ -31,7 +31,6 @@ describe 'as a user' do
         expect(page).to have_content("You should wear:")
 
         expect(page.find(".clothing-image")[:class]).to eq("clothing-image")
-        expect(page.find(".clothing-image")[:class]).to eq("clothing-image")
         expect(page.find(".clothing-recommendation")[:class]).to eq("clothing-recommendation")
         expect(page.find(".city")[:class]).to eq("city")
         expect(page.find(".weather-summary")[:class]).to eq("weather-summary")
