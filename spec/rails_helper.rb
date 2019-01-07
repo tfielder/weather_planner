@@ -8,6 +8,14 @@ require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 require 'factory_bot_rails'
 require 'faker'
+require 'webmock/rspec'
+require 'vcr'
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/cassettes"
+  config.hook_into :webmock
+  config.allow_http_connections_when_no_cassette = true
+end
 
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
