@@ -27,11 +27,6 @@ class ResultsFacade
     @weather['currently']['temperature'].to_s
   end
 
-  def day_of_the_week
-    index = DateTime.strptime(@weather['currently']['time'], '%s').wday
-    @days_of_week[index]
-  end
-
   def todays_high
     @weather['daily']['data'][0]['temperatureHigh'].to_s
   end
@@ -45,7 +40,7 @@ class ResultsFacade
   end
 
   def day_of_the_week(day)
-    index = DateTime.strptime(@weather['daily']['data'][day]['time'].to_s, '%s').wday
+    index = DateTime.strptime(@weather['daily']['data'][day]['time'].to_s, '%s').in_time_zone(@weather[:timezone]).wday
     @days_of_week[index]
   end
 
