@@ -5,86 +5,62 @@
     <div class="clothing-image">clothing icon</div>
     <h3>You should wear:</h3>
     <div class="clothing-recommendation">clothing recommendation</div>
-    <div class="location">location</div>
-    <div class="weather-summary">weather summary</div>
-    <div class="current-weather-icon">current weather icon</div>
-    <div class="current-temp">current temp</div>
-    <div class="day-of-the-week">day of the week</div>
-    <div class="todays-high">todays high</div>
-    <div class="todays-low">todays low</div>
-    <div class="now">now</div>
-    <div class="in-one-hour">in one hour</div>
-    <div class="in-two-hours">in two hours</div>
-    <div class="in-three-hours">in three hours</div>
-    <div class="in-four-hours">in four hours</div>
-    <div class="in-five-hours">in five hours</div>
-    <div class="in-six-hours">in six hours</div>
+    <div class="location">Weather for: <%= "#{@results.location}" %></div>
+    <div class="weather-summary">weather summary: <%= "#{@results.weather_summary}" %></div>
+    <div class="current-weather-icon">current weather icon: <%= "#{@results.current_weather_icon}" %></div>
+    <div class="current-temp">current temp: <%= "#{@results.current_temp}" %>&deg;</div>
+    <div class="day-of-the-week">day of the week: <%= "#{@results.day_of_the_week(1)}" %></div>
+    <div class="todays-high">todays high: <%= "#{@results.todays_high}" %>&deg;</div>
+    <div class="todays-low">todays low: <%= "#{@results.todays_low}" %>&deg;</div>
+    <div class="in-one-hour">in one hour: <%= "#{@results.in_x_hours(1)}" %></div>
+    <div class="in-two-hours">in two hours: <%= "#{@results.in_x_hours(2)}" %></div>
+    <div class="in-three-hours">in three hours: <%= "#{@results.in_x_hours(3)}" %></div>
+    <div class="in-four-hours">in four hours: <%= "#{@results.in_x_hours(4)}" %></div>
+    <div class="in-five-hours">in five hours: <%= "#{@results.in_x_hours(5)}" %></div>
+    <div class="in-six-hours">in six hours: <%= "#{@results.in_x_hours(6)}" %></div>
   </div>
-<h1 class="five-days-button">Next 5 Days</h1>
-  <div class="five-days-main">
-    <div class=""></div>
+<h1 class="weekly-forecast-button">Weekly Forecast</h1>
+  <div class="weekly-forecast-main">
     <div class="in-one-day">
-      <div class="day-contents"class="day-of-the-week-1">Thirsday</div>
-      <div class="day-contents"class="days-icon-1">Happy Face</div>
-      <div class="day-contents"class="days-high-1">98&deg;</div>
-      <div class="day-contents"class="days-low-1">-100&deg;</div>
+      <div class="day-contents" class="day-of-the-week-1"><%= "#{@results.day_of_the_week(1)}" %></div>
+      <div class="day-contents" class="days-icon-1"><%= "#{@results.icon_of_the_day(1)}" %></div>
+      <div class="day-contents" class="days-high-1"><%= "#{@results.high_of_the_day(1)}" %>&deg;</div>
+      <div class="day-contents" class="days-low-1"><%= "#{@results.low_of_the_day(1)}" %>&deg;</div>
     </div>
     <div class="in-two-days">
-      <div class="day-contents"class="day-of-the-week-2">Thirsday</div>
-      <div class="day-contents"class="days-icon-2">Happy Day</div>
-      <div class="day-contents"class="days-high-2">98&deg;</div>
-      <div class="day-contents"class="days-low-2">-100&deg;</div>
+      <div class="day-contents" class="day-of-the-week-2"><%= "#{@results.day_of_the_week(2)}" %></div>
+      <div class="day-contents" class="days-icon-2"><%= "#{@results.icon_of_the_day(2)}" %></div>
+      <div class="day-contents" class="days-high-2"><%= "#{@results.high_of_the_day(2)}" %>&deg;</div>
+      <div class="day-contents" class="days-low-2"><%= "#{@results.low_of_the_day(2)}" %>&deg;</div>
     </div>
     <div class="in-three-days">
-      <div class="day-contents"class="day-of-the-week-3">Thirsday</div>
-      <div class="day-contents"class="days-icon-3">Happy Day</div>
-      <div class="day-contents"class="days-high-3">98&deg;</div>
-      <div class="day-contents"class="days-low-3">-100&deg;</div>
+      <div class="day-contents" class="day-of-the-week-3"><%= "#{@results.day_of_the_week(3)}" %></div>
+      <div class="day-contents" class="days-icon-3"><%= "#{@results.icon_of_the_day(3)}" %></div>
+      <div class="day-contents" class="days-high-3"><%= "#{@results.high_of_the_day(3)}" %>&deg;</div>
+      <div class="day-contents" class="days-low-3"><%= "#{@results.low_of_the_day(3)}" %>&deg;</div>
     </div>
     <div class="in-four-days">
-      <div class="day-contents"class="day-of-the-week-4">Thirsday</div>
-      <div class="day-contents"class="days-icon-4">Happy Day</div>
-      <div class="day-contents"class="days-high-4">98&deg;</div>
-      <div class="day-contents"class="days-low-4">-100&deg;</div>
+      <div class="day-contents" class="day-of-the-week-4"><%= "#{@results.day_of_the_week(4)}" %></div>
+      <div class="day-contents" class="days-icon-4"><%= "#{@results.icon_of_the_day(4)}" %></div>
+      <div class="day-contents" class="days-high-4"><%= "#{@results.high_of_the_day(4)}" %>&deg;</div>
+      <div class="day-contents" class="days-low-4"><%= "#{@results.low_of_the_day(4)}" %>&deg;</div>
     </div>
     <div class="in-five-days">
-      <div class="day-contents"class="day-of-the-week-5">Thirsday</div>
-      <div class="day-contents"class="days-icon-5">Happy Day</div>
-      <div class="day-contents"class="days-high-5">98&deg;</div>
-      <div class="day-contents"class="days-low-5">-100&deg;</div>
+      <div class="day-contents" class="day-of-the-week-5"><%= "#{@results.day_of_the_week(5)}" %></div>
+      <div class="day-contents" class="days-icon-5"><%= "#{@results.icon_of_the_day(5)}" %></div>
+      <div class="day-contents" class="days-high-5"><%= "#{@results.high_of_the_day(5)}" %>&deg;</div>
+      <div class="day-contents" class="days-low-5"><%= "#{@results.low_of_the_day(5)}" %>&deg;</div>
     </div>
-  </div>
-<h1 class="ten-days-button">Next 10 Days</h1>
-  <div class="ten-days-main">
-    <div class=""></div>
     <div class="in-six-days">
-      <div class="day-contents"class="day-of-the-week-6">Thirsday</div>
-      <div class="day-contents"class="days-icon-6">Happy Day</div>
-      <div class="day-contents"class="days-high-6">98&deg;</div>
-      <div class="day-contents"class="days-low-6">-100&deg;</div>
+      <div class="day-contents" class="day-of-the-week-6"><%= "#{@results.day_of_the_week(6)}" %></div>
+      <div class="day-contents" class="days-icon-6"><%= "#{@results.icon_of_the_day(6)}" %></div>
+      <div class="day-contents" class="days-high-6"><%= "#{@results.high_of_the_day(6)}" %>&deg;</div>
+      <div class="day-contents" class="days-low-6"><%= "#{@results.low_of_the_day(6)}" %>&deg;</div>
     </div>
     <div class="in-seven-days">
-      <div class="day-contents"class="day-of-the-week-7">Thirsday</div>
-      <div class="day-contents"class="days-icon-7">Happy Day</div>
-      <div class="day-contents"class="days-high-7">98&deg;</div>
-      <div class="day-contents"class="days-low-7">-100&deg;</div>
-    </div>
-    <div class="in-eight-days">
-      <div class="day-contents"class="day-of-the-week-8">Thirsday</div>
-      <div class="day-contents"class="days-icon-8">Happy Day</div>
-      <div class="day-contents"class="days-high-8">98&deg;</div>
-      <div class="day-contents"class="days-low-8">-100&deg;</div>
-    </div>
-    <div class="in-nine-days">
-      <div class="day-contents"class="day-of-the-week-9">Thirsday</div>
-      <div class="day-contents"class="days-icon-9">Happy Day</div>
-      <div class="day-contents"class="days-high-9">98&deg;</div>
-      <div class="day-contents"class="days-low-9">-100&deg;</div>
-    </div>
-    <div class="in-ten-days">
-      <div class="day-contents"class="day-of-the-week-10">Thirsday</div>
-      <div class="day-contents"class="days-icon-10">Happy Day</div>
-      <div class="day-contents"class="days-high-10">98&deg;</div>
-      <div class="day-contents"class="days-low-10">-100&deg;</div>
+      <div class="day-contents" class="day-of-the-week-7"><%= "#{@results.day_of_the_week(7)}" %></div>
+      <div class="day-contents" class="days-icon-7"><%= "#{@results.icon_of_the_day(7)}" %></div>
+      <div class="day-contents" class="days-high-7"><%= "#{@results.high_of_the_day(7)}" %>&deg;</div>
+      <div class="day-contents" class="days-low-7"><%= "#{@results.low_of_the_day(7)}" %>&deg;</div>
     </div>
   </div>
