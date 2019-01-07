@@ -88,9 +88,4 @@ class ResultsFacade
     return 'and bring an umbrella' if precip > 0
   end
 
-private
-  def convert_unix_to_datetime(unix)
-
-  end
-
 end
