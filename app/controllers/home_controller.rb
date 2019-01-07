@@ -4,6 +4,7 @@ class HomeController < ApplicationController
   end
 
   def show
-    @location = params[:location]
+    unformatted_results = ResultsService.new(params[:location]).render_results
+    @results = ResultsFacade.new(unformatted_results)
   end
 end
