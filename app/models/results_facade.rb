@@ -33,7 +33,7 @@ class ResultsFacade
     #hourly time 1546830000 (top of the hour)
     #daily time 1546758000 (top of the day)
     # DateTime.new(@weather['currently']['time']).in_time_zone(@weather['timezone'])
-    @weather['currently']['time']
+    DateTime.strptime(@weather['currently']['time'], '%s')
   end
 
   def todays_high
@@ -57,7 +57,7 @@ class ResultsFacade
   end
 
   def day_of_the_week(day)
-    @weather['daily']['data'][day]['time']
+    DateTime.strptime(@weather['daily']['data'][day]['time'].to_s, '%s')
   end
 
   def icon_of_the_day(day)
@@ -72,23 +72,31 @@ class ResultsFacade
     @weather['daily']['data'][day]['temperatureLow'].to_s
   end
 
-  def get_headwear(temp)
-    if temp <= 35 return 'hat, gloves, scarf'
+  def precip_of_the_day(day)
+    @weather['daily']['data'][day]['precipIntensity']
   end
 
-  def get_top(temp)
-    if temp <= 35 return 'coat'
-    if (temp <= 65) && (temp > 35) return 'sweater and jacket'
-    if temp > 65 return 'shirt'
+  def get_headwear
+    temp = high_of_the_day(0).to_i
+    return 'hat, gloves, scarf,' if temp <= 35
+  end
+
+  def get_top
+    temp = high_of_the_day(0).to_i
+    return 'coat,' if temp <= 35
+    return 'sweater and jacket,' if (temp <= 65) && (temp > 35)
+    return 'shirt,' if temp > 65
   end
 
   def get_bottom
-    if temp <= 65 return 'pants'
-    if temp > 65 return 'shorts'
+    temp = high_of_the_day(0).to_i
+    return 'and pants' if temp <= 65
+    return 'and shorts' if temp > 65
   end
 
-  def get_accessories(precip)
-    if precip > 0 return 'umbrella'
+  def get_accessories
+    precip = precip_of_the_day(0).to_i
+    return 'and bring an umbrella' if precip > 0
   end
 
 private

@@ -2,10 +2,14 @@
 
 <h1 class="today-button">Today</h1>
   <div class="today-main">
-    <div class="clothing-image">clothing icon</div>
-    <h3>You should wear:</h3>
-    <div class="clothing-recommendation">clothing recommendation</div>
     <div class="location">Weather for: <%= "#{@results.location}" %></div>
+    <div class="clothing-image">clothing icon</div>
+    <div class="clothing-recommendation">Clothing recommendation:
+      <%= "#{@results.get_headwear}" %>
+      <%= "#{@results.get_top}" %>
+      <%= "#{@results.get_bottom}" %>
+      <%= "#{@results.get_accessories}" %>
+    </div>
     <div class="weather-summary">weather summary: <%= "#{@results.weather_summary}" %></div>
     <div class="current-weather-icon">current weather icon: <%= "#{@results.current_weather_icon}" %></div>
     <div class="current-temp">current temp: <%= "#{@results.current_temp}" %>&deg;</div>
