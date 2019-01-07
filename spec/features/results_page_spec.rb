@@ -38,19 +38,19 @@ describe 'as a user' do
 
         #Next 5 days section
         expect(page.find(".weekly-forecast-main")[:class]).to eq("weekly-forecast-main")
-        expect(page.find(".in-one-day")[:class]).to eq("in-one-day")
-        expect(page.find(".in-two-days")[:class]).to eq("in-two-days")
-        expect(page.find(".in-three-days")[:class]).to eq("in-three-days")
-        expect(page.find(".in-four-days")[:class]).to eq("in-four-days")
-        expect(page.find(".in-five-days")[:class]).to eq("in-five-days")
+        expect(page.find(".day-1")[:class]).to eq("day-1")
+        expect(page.find(".day-2")[:class]).to eq("day-2")
+        expect(page.find(".day-3")[:class]).to eq("day-3")
+        expect(page.find(".day-4")[:class]).to eq("day-4")
+        expect(page.find(".day-5")[:class]).to eq("day-5")
 
         # expect(page.find(".day-of-the-week-1")[:class]).to eq("day-of-the-week-1")
         # expect(page.find(".days-icon-1")[:class]).to eq("days-icon-1")
         # expect(page.find(".days-high-1")[:class]).to eq("days-high-1")
         # expect(page.find(".days-low-1")[:class]).to eq("days-low-1")
 
-        expect(page.find(".in-six-days")[:class]).to eq("in-six-days")
-        expect(page.find(".in-seven-days")[:class]).to eq("in-seven-days")
+        expect(page.find(".day-6")[:class]).to eq("day-6")
+        expect(page.find(".day-7")[:class]).to eq("day-7")
       end
     end
   end
