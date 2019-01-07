@@ -23,7 +23,7 @@ describe 'as a user' do
 
         expect(page.find(".clothing-image")[:class]).to eq("clothing-image")
         expect(page.find(".clothing-recommendation")[:class]).to eq("clothing-recommendation")
-        expect(page.find(".city")[:class]).to eq("city")
+        expect(page.find(".location")[:class]).to eq("location")
         expect(page.find(".weather-summary")[:class]).to eq("weather-summary")
         expect(page.find(".current-weather-icon")[:class]).to eq("current-weather-icon")
         expect(page.find(".current-temp")[:class]).to eq("current-temp")
