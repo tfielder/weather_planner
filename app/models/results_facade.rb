@@ -72,8 +72,26 @@ class ResultsFacade
     @weather['daily']['data'][day]['temperatureLow'].to_s
   end
 
-  private
+  def get_headwear(temp)
+    if temp <= 35 return 'hat, gloves, scarf'
+  end
 
+  def get_top(temp)
+    if temp <= 35 return 'coat'
+    if (temp <= 65) && (temp > 35) return 'sweater and jacket'
+    if temp > 65 return 'shirt'
+  end
+
+  def get_bottom
+    if temp <= 65 return 'pants'
+    if temp > 65 return 'shorts'
+  end
+
+  def get_accessories(precip)
+    if precip > 0 return 'umbrella'
+  end
+
+private
   def convert_unix_to_datetime(unix)
 
   end
