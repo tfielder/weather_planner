@@ -4,6 +4,7 @@ class ResultsFacade
   def initialize(data)
     @location = data["location"]
     @weather = data["weather"]
+    @days_of_week = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
   end
 
   def location
@@ -27,13 +28,8 @@ class ResultsFacade
   end
 
   def day_of_the_week
-    #need a conversion
-    # DateTime.strptime(@weather['currently']['time'].to_s,'%s')
-    #currently time 1546830790 (to the minute)
-    #hourly time 1546830000 (top of the hour)
-    #daily time 1546758000 (top of the day)
-    # DateTime.new(@weather['currently']['time']).in_time_zone(@weather['timezone'])
-    DateTime.strptime(@weather['currently']['time'], '%s')
+    index = DateTime.strptime(@weather['currently']['time'], '%s').wday
+    @days_of_week[index]
   end
 
   def todays_high
@@ -44,20 +40,13 @@ class ResultsFacade
     @weather['daily']['data'][0]['temperatureLow'].to_s
   end
 
-  def now
-    #@weather['currently']
-  end
-
-  # def
-  #   @weather['currently']
-  # end
-
   def in_x_hours(index)
     @weather['hourly']['data'][index]['summary']
   end
 
   def day_of_the_week(day)
-    DateTime.strptime(@weather['daily']['data'][day]['time'].to_s, '%s')
+    index = DateTime.strptime(@weather['daily']['data'][day]['time'].to_s, '%s').wday
+    @days_of_week[index]
   end
 
   def icon_of_the_day(day)
