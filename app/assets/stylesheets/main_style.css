@@ -50,6 +50,10 @@ h2 {
   font-size: 3em;
 }
 
+.day-contents {
+  display: inline;
+}
+
 input[type=text], select {
   width: 90%;
   padding: 14px 20px;
