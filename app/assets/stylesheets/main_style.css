@@ -1,0 +1,86 @@
+/*
+  Fonts:
+    Primary:
+    Trocchi   <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet"> font-family: 'Trocchi', serif;
+    Shadow Into Light Two <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">  font-family: 'Shadows Into Light Two', cursive;
+    Architects Daughter <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">  font-family: 'Architects Daughter', curs
+    Amatic SC  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">   font-family: 'Amatic SC', cursive;
+
+    Secondary:
+    Mako <link href="https://fonts.googleapis.com/css?family=Mako" rel="stylesheet">  font-family: 'Mako', sans-serif;
+    Reem Kufi <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">  font-family: 'Reem Kufi', sans-serif;
+    -> Hind   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">  font-family: 'Hind', sans-serif;
+
+  Colors:
+    Palette_1:
+      #f46036 : orange
+      #5b85aa : light_blue
+      #414770 : purple_blue
+      #372248 : purple
+      #171123 : black_purple
+
+    Palette_2:
+      #870058 : fuschia
+      #a4303f : red
+      #f2d0a4 : yellow_almond
+      #ffeccc : cream
+      #c8d6af : mint
+*/
+
+body {
+  background-image: "../../lib/assets/photos/background-blur-clean-531880.jpg";
+  background-color: #414770;
+  color: #fff;
+  font-family: 'Mako', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 5.4em;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 3em;
+}
+
+.form {
+  font-size: 3em;
+}
+
+.day-contents {
+  display: inline;
+}
+
+input[type=text], select {
+  width: 90%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type=submit] {
+  width: 90%;
+  background-color: #5b85aa;
+  color: #fff;
+  font-size: 1em;
+  padding: 14px 20px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+a {
+  color: #ffeccc;
+}
+
+div {
+  margin: 0 auto;
+  width: 90%;
+}
