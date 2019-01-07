@@ -65,6 +65,10 @@ class ResultsFacade
     @weather['daily']['data'][day]['precipIntensity']
   end
 
+  def get_clothing
+    return '../assets/images/weather_assets/coat.png'
+  end
+
   def get_headwear
     temp = high_of_the_day(0).to_i
     return 'hat, gloves, scarf,' if temp <= 35
