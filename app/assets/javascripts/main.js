@@ -21,6 +21,7 @@ const setWeeklyForecast = () => {
   };
 }
 
+//setweather logic
 const setWeather = (klass) => {
   if ( $(klass).is('clear-day')) {
     $(klass).append(`<%= image_tag "weather_assets/clear-day.png" %>`);
@@ -49,6 +50,9 @@ const setWeather = (klass) => {
 
 const setWeatherIcons = () => {
   setCurrentWeather(".current-weather-icon");
+  for (var i = 1; i < 8; i++) {
+    setCurrentWeather("days-icon-${i}")
+  };
 }
 
 setWeather(".current-weather-icon");
