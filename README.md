@@ -54,6 +54,8 @@ testing:
 ## <a name="known-issues"></a>Known Issues
 
 ## <a name="running-tests"></a>Running Tests
+1. From the command line run `bundle`.
+2. Run rspec.
 
 ## <a name="how-to-contribute"></a>How to Contribute
   Drop a line to the creator, or add a Pull Request on GitHub.
