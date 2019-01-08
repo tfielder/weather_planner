@@ -40,7 +40,7 @@ class ResultsFacade
   end
 
   def day_of_the_week(day)
-    index = DateTime.strptime(@weather['daily']['data'][day]['time'].to_s, '%s').in_time_zone(@weather[:timezone]).wday
+    index = DateTime.strptime(@weather['daily']['data'][day]['time'].to_s, '%s').in_time_zone(@weather['timezone']).wday
     @days_of_week[index]
   end
 
