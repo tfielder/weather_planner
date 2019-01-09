@@ -54,6 +54,16 @@ describe 'as a user' do
         expect(page.find(".day-6")[:class]).to eq("day-6")
         expect(page.find(".day-7")[:class]).to eq("day-7")
       end
+      it 'redirects user to the homepage with invalid location' do
+        visit '/'
+
+        fill_in :location, with: '&F*weo)23'
+
+        click_on 'Submit'
+
+        expect(page).to have_content("Could not find weather for that location")
+        expect(current_path).to eq('/results')
+      end
     end
   end
 end
