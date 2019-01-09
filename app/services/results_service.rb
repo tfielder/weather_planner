@@ -21,6 +21,6 @@ class ResultsService
   end
 
   def parse(result)
-    JSON.parse(result.body)
+    JSON.parse(result.body) unless result.body.include?("We're sorry")
   end
 end
