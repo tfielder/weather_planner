@@ -20,7 +20,9 @@ describe 'as a user' do
         #Today section
         expect(page).to have_content("Clothing recommendation:")
 
-        expect(page.find(".clothing-image")[:class]).to eq("clothing-image")
+        expect(page.find(".clothing-headwear")[:class]).to eq("clothing-headwear")
+        expect(page.find(".clothing-top")[:class]).to eq("clothing-top")
+        expect(page.find(".clothing-bottom")[:class]).to eq("clothing-bottom")
         expect(page.find(".clothing-recommendation")[:class]).to eq("clothing-recommendation")
         expect(page.find(".location")[:class]).to eq("location")
         expect(page.find(".weather-summary")[:class]).to eq("weather-summary")

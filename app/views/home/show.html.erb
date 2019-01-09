@@ -10,9 +10,9 @@
       <%= "#{@results.get_accessories_description}" %>
     </div>
     <div class="clothing-image">clothing suggestions:
-      <div class="clothing-image" class="clothing_headwear"><%= image_tag @results.get_headwear %></div>
-      <div class="clothing-image" class="clothing_top"><%= image_tag @results.get_top %></div>
-      <div class="clothing-image" class="clothing_bottom"><%= image_tag @results.get_bottom %></div>
+      <div class="clothing-headwear"><%= image_tag @results.get_headwear %></div>
+      <div class="clothing-top"><%= image_tag @results.get_top %></div>
+      <div class="clothing-bottom"><%= image_tag @results.get_bottom %></div>
     </div>
     <div class="weather-summary">Weather summary: <%= "#{@results.weather_summary}" %></div>
     <div class="current-weather-icon"><%= image_tag @results.current_weather_icon %></div>
