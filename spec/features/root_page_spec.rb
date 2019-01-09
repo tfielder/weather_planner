@@ -5,7 +5,7 @@ RSpec.describe 'as a user' do
     it 'shows the title of the page' do
       visit '/'
 
-      expect(page).to have_content('Weatherwise')
+      expect(page).to have_content('Whetherwise')
       expect(page).to have_content('A better way to plan your day')
       expect(page).to have_field('Location')
       expect(page).to have_button('Submit')
