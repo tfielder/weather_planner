@@ -3,9 +3,9 @@
 
 [![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/tfielder/api_weather_planner)
 
-![screen shot 2019-01-08 at 11 37 47 pm](https://user-images.githubusercontent.com/38568909/50881517-14ba6b00-139f-11e9-9491-37a45a4b4887.png)
-
 ![screen shot 2019-01-08 at 11 37 21 pm](https://user-images.githubusercontent.com/38568909/50881553-37e51a80-139f-11e9-99cc-6c53b4a0ac5a.png)
+
+![screen shot 2019-01-08 at 11 37 47 pm](https://user-images.githubusercontent.com/38568909/50881517-14ba6b00-139f-11e9-9491-37a45a4b4887.png)
 
 
 ## Table of Contents
@@ -24,9 +24,9 @@
 
   Visit the app here: https://whetherwise.herokuapp.com/
 
-  This app also makes use of the weather planner backend api.
-  The backend api repo can be found here: https://github.com/tfielder/api_weather_planner
-  And the backend live api can be found here: https://weather-planner-api.herokuapp.com/
+* This app also makes use of the weather planner backend api.
+* The backend api repo can be found here: https://github.com/tfielder/api_weather_planner
+* And the backend live api can be found here: https://weather-planner-api.herokuapp.com/
 
 ## <a name="core-details"></a>Core Details
   App Name: Whetherwise
