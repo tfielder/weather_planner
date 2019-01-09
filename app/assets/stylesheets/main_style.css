@@ -28,10 +28,13 @@
 */
 
 body {
-  background-image: "../../lib/assets/photos/background-blur-clean-531880.jpg";
   background-color: #414770;
+  background-image: url("rainy.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   font-family: 'Mako', sans-serif;
+  font-size: 2em;
 }
 
 h1 {
@@ -50,7 +53,8 @@ h2 {
   font-size: 3em;
 }
 
-.day-contents {
+.day-1, .day-2, .day-3, .day-4, .day-5, .day-6, .day-7 {
+  background-color: #171123;
   display: inline;
 }
 
@@ -59,9 +63,11 @@ input[type=text], select {
   padding: 14px 20px;
   margin: 8px 0;
   display: inline-block;
+  text-align: center;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-size: 1em;
 }
 
 button[type=submit] {
@@ -76,11 +82,79 @@ button[type=submit] {
   cursor: pointer;
 }
 
-a {
-  color: #ffeccc;
+.clothing-image img{
+
 }
 
-div {
-  margin: 0 auto;
-  width: 90%;
+.clothing-headwear img, .clothing-top img, .clothing-bottom img {
+  width: 25%;
+  height: auto;
 }
+.clothing-headwear, .clothing-top, .clothing-bottom {
+  display: inline;
+  /* background-color: purple; */
+}
+
+.clothing, .today-main, .weekly-forecast-main {
+  background-color: rgba(55, 34, 72, 0.8);
+  border-radius: 15px;
+}
+
+.current_temp h1 {
+  font-size: 5.4em;
+  font-family: 'Mako', sans-serif;
+}
+
+.weather-summary {
+  padding-left: 25px;
+}
+
+.current-weather-icon, .weather-summary {
+  display: inline;
+  padding: 2em, 2em, 2em, 2em;
+}
+
+.day-of-the-week, .todays-high, .todays-low {
+  display: inline;
+}
+
+.current-weather-icon img, .days-icon-1 img, .days-icon-2 img, .days-icon-3 img, .days-icon-4 img, .days-icon-5 img, .days-icon-6 img, .days-icon-7 img {
+  width: 15%;
+}
+
+.todays-low, .days-low-1, .days-low-2, .days-low-3, .days-low-4, .days-low-5, .days-low-6, .days-low-7 {
+  color: #5b85aa;
+  border-bottom: 4px solid white;
+}
+
+.todays-low {
+  border-bottom: none;
+}
+
+a {
+  font-size: 2em;
+  color: orange;
+  margin-left: 5%;
+}
+
+.main-page {
+  text-align: center;
+  height: 100%;
+}
+
+.main-page h1 {
+  /* background-color: #414770; */
+  display: inline-block;
+  background-color: rgba(255,165,0,0.8);
+  width: 90%;
+  border-radius: 15px;
+  font-size: 4em;
+}
+
+.main-page h2 {
+  /* background-color: #414770; */
+  display: inline-block;
+  background-color: rgba(255,165,0,0.8);
+  border-radius: 15px;
+}
+
