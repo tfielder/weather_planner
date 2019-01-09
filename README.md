@@ -20,7 +20,7 @@
 * [Tech Stack List](#tech-stack-list)
 
 ## <a name="introduction"></a>Introduction
-  Many of us plan our activities and what we'll wear based on the weather, so why not have all of these in one place? Weatherwise is a basic app that integrates the weather, apparel recommendations based on the weather.
+  Many of us plan our activities and what we'll wear based on the weather, so why not have all of these in one place? Whetherwise is a basic app that integrates the weather, apparel recommendations based on the weather.
 
   Visit the app here: https://whetherwise.herokuapp.com/
 
