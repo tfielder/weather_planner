@@ -1,4 +1,8 @@
 # Whetherwise README
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/tfielder/api_weather_planner.svg?columns=all)](https://waffle.io/tfielder/api_weather_planner)
+[![Build Status](https://travis-ci.org/tfielder/api_weather_planner.svg?branch=master)](https://travis-ci.org/tfielder/api_weather_planner)
+[![Coverage Status](https://coveralls.io/repos/github/tfielder/api_weather_planner/badge.svg?branch=master)](https://coveralls.io/github/tfielder/api_weather_planner?branch=master)
+[![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/tfielder/api_weather_planner)
 ## Table of Contents
 
 * [Introduction](#introduction)
