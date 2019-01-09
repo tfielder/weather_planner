@@ -2,6 +2,10 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/tfielder/api_weather_planner.svg?columns=all)](https://waffle.io/tfielder/api_weather_planner)
 
 [![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/tfielder/api_weather_planner)
+
+![screen shot 2019-01-08 at 11 37 47 pm](https://user-images.githubusercontent.com/38568909/50881517-14ba6b00-139f-11e9-9491-37a45a4b4887.png)
+
+
 ## Table of Contents
 
 * [Introduction](#introduction)
