@@ -29,10 +29,10 @@
 * And the backend live api can be found here: https://weather-planner-api.herokuapp.com/
 
 ## <a name="core-details"></a>Core Details
-  App Name: Whetherwise
-  Last Update: 01/05/19
-  Authors/Contributors: Tim Fielder
-  Version: 1.1.1
+* App Name: Whetherwise
+* Last Update: 01/05/19
+* Authors/Contributors: Tim Fielder
+* Version: 1.1.1
 
 ## <a name="initial-setup"></a>Initial Setup
   To get started locally:
