@@ -7,7 +7,6 @@
 * [Introduction](#introduction)
 * [Core Details](#core-details)
 * [Initial Setup](#initial-setup)
-* [How to Use](#how-to-use)
 * [Dependencies](#dependencies)
 * [Known Issues](#known-issues)
 * [Running Tests](#running-tests)
@@ -35,8 +34,6 @@
   2. Run `bundle` from the CLI.
   3. Run `rails s`
   4. Navigate to `localhost:3000` in the address bar of your browser.
-
-## <a name="how-to-use"></a>How to Use
 
 ## <a name="dependencies"></a>Dependencies
 Gems:
